@@ -1,4 +1,4 @@
-import { Card, CardAction, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
+import { Card, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { projects } from "@/components/ProjectInfo";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
@@ -22,11 +22,17 @@ function Projects()
             </div>
 
             {/* Project Cards */}
-            <div className="max-w-5x1 mx-auto px-6 pb-24">
+            <div className="max-w-5x1 mx-auto px-6 pb-24 flex flex-col justify-center">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {projects.map((project, index) => (
                         <Card key={index}>
-                            <img src= {project.image} alt={project.title} className="object-contain rounded-t-md" />
+                            <div className="w-full h-80 overflow-hidden rounded-t-md">
+                                <img
+                                    src={project.image}
+                                    alt={project.title}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
                             <CardHeader>
                                 <CardTitle>{project.title}</CardTitle>
                                 <CardDescription>{project.description}</CardDescription>
@@ -65,6 +71,11 @@ function Projects()
                             </CardFooter>
                         </Card>
                     ))}
+                </div>
+                <div className="max-w-5xl mx-auto px-6 py-24 flex flex-col justify-center">
+                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
+                        More to come, this is just the start!
+                    </h2>
                 </div>
             </div>
             </section>

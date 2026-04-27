@@ -1,4 +1,5 @@
 import UncleJoeImage from "@/assets/Projects_Images/UncleJoe.png";
+import MystifyingSorceryImage from "@/assets/Projects_Images/MystifyingSorcery.png";
 export const projects = [
     {
         title: "Uncle Joe's Fishing Extravaganza",
@@ -18,15 +19,17 @@ export const projects = [
         ]
     },
     {
-        title: "Project 2",
-        description: "This is a description of project 2. It is a very cool project that I worked on.",
-        image: "/path/to/image.jpg",
-        link: "https://example.com/project2",
+        title: "Mystifying Sorcery",
+        description: "A simple 2D platformer, where you navigate through levels collecting keys and avoiding various obstacles to make it to the end of the level.",
+        image: MystifyingSorceryImage,
+        link: "https://github.com/ilhl3/Mystifying-Sorcery",
         moreInfoDescription: "This is more info 2",
         bullets: [
-            "bullet 1",
-            "bullet 2",
-            "bullet 3"
+            "Developed in Unity 2D using c#",
+            "Simple, yet satisfying to control platformer",
+            "Collect keys and avoid various obstacles to make it to the end of the level",
+            "Developed as a group project, with 4 members",
+            "Designed and implemented 3 different levels",
         ]
     }
 ];

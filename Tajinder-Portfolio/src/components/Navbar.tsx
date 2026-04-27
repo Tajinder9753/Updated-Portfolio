@@ -1,4 +1,9 @@
 import { Button } from "./ui/button";
+import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "./ui/dialog";
+import { Field, FieldGroup } from "./ui/field";
+import { Input } from "./ui/input";
+import { Label } from "./ui/label";
+import { Textarea } from "./ui/textarea";
 
 const Navbar = () => {
   const scrollTo = (id: string) => {
@@ -19,9 +24,42 @@ const Navbar = () => {
           Projects
         </Button>
         <div className="flex gap-2 items-right ml-auto">
-          <Button variant="ghost">
-            Contact Me
-          </Button>
+          <Dialog>
+            <form>
+              <DialogTrigger asChild>
+                  <Button variant="ghost">
+                    Contact Me
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="sm:max-w-sm">
+                  <DialogHeader>
+                    <DialogTitle>Contact Me</DialogTitle>
+                    <DialogDescription>
+                      Please fill out the form below to contact me.
+                    </DialogDescription>
+                  </DialogHeader>
+                  <FieldGroup>
+                    <Field>
+                      <Label htmlFor="name">Name</Label>
+                      <Input id="name" name="name" placeholder="Enter Your Name" />
+                    </Field>
+                    <Field>
+                      <Label htmlFor="email">Email</Label>
+                      <Input id="email" name="email" placeholder="Enter Your Email" />
+                    </Field>
+                    <Field>
+                      <Label htmlFor="message">Message</Label>
+                      <Textarea placeholder="Type your message here" />
+                    </Field>
+                  </FieldGroup>
+                  <DialogFooter>
+                    <DialogClose asChild>
+                      <Button type="submit">Submit</Button>
+                    </DialogClose>
+                  </DialogFooter>
+                </DialogContent>
+            </form>
+          </Dialog>
         </div>
       </nav>
     </div>
