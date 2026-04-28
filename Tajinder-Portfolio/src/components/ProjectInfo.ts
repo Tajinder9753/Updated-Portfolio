@@ -2,6 +2,7 @@ import UncleJoeImage from "@/assets/Projects_Images/UncleJoe.png";
 import MystifyingSorceryImage from "@/assets/Projects_Images/MystifyingSorcery.png";
 import ThreeMealsADayImage from "@/assets/Projects_Images/ThreeMeals.png";
 import CardsAndCavernsImage from "@/assets/Projects_Images/CardsAndCaverns.png";
+import TowerDefenceImage from "@/assets/Projects_Images/TowerDefence.png";
 export const projects = [
     {
         title: "Uncle Joe's Fishing Extravaganza",
@@ -68,6 +69,24 @@ export const projects = [
             "Final boss level to end the game",
             "Map system where players can choose which level to go to next",
             "Developed as a group project, with 6 members"
+        ]
+    },
+    {
+        title: "Tower Defence",
+        description: "A 2D tower defence game where players can place different turrets to defend against waves of enemies",
+        image: TowerDefenceImage,
+        link: "https://github.com/EricLamoureux98/Tower-Defense",
+        moreInfoDescription: "A 2D tower defence game developed as a group project. The game is built in Unity 2D, using c#. The game features various different turrets that players can place to defend against waves of enemies."
+        + "Players have a menu on the left side of the screen where they can select which turret to place and then click on a tile to place the turret. Each turret has different stats such as damage, range, and fire rate, and players must strategically place their turrets"
+        + "to defend against the waves of enemies.",
+        bullets: [
+            "Developed in Unity 2D using c#",
+            "Place different turrets to defend against waves of enemies",
+            "Multiple different turrets with different stats such as damage, range, and fire rate",
+            "Multiple different levels with increasing difficulty",
+            "Developed as a group project, with 2 members",
+            "Created the art assets for the game, including the turrets, enemies, and background",
+            "Early school project but still a functional and enjoyable tower defence game"
         ]
     }
 ];
