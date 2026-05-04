@@ -23,17 +23,17 @@ function Projects()
 
             {/* Project Cards */}
             <div className="max-w-5x1 mx-auto px-6 pb-24 flex flex-col justify-center">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
                     {projects.map((project, index) => (
-                        <Card key={index}>
-                            <div className="w-full h-80 overflow-hidden rounded-t-md">
+                        <Card key={index} className="flex flex-col">
+                            <div className="w-full h-70 overflow-hidden rounded-t-md shrink-0">  {/* ← fixed height, flex-shrink-0 */}
                                 <img
                                     src={project.image}
                                     alt={project.title}
                                     className="w-full h-full object-cover"
                                 />
                             </div>
-                            <CardHeader>
+                            <CardHeader className="grow">  {/* ← flex-grow pushes footer down */}
                                 <CardTitle>{project.title}</CardTitle>
                                 <CardDescription>{project.description}</CardDescription>
                             </CardHeader>
