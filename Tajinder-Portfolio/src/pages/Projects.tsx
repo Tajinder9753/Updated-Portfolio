@@ -38,9 +38,17 @@ function Projects()
                                 <CardDescription>{project.description}</CardDescription>
                             </CardHeader>
                             <CardFooter className="flex justify-between">
-                                <a href = {project.link} target="_blank" rel="noopener noreferrer">
-                                    <Button className="text-myTurquoise">Github</Button>
-                                </a>
+                                {project.link && (
+                                    <a href = {project.link} target="_blank" rel="noopener noreferrer">
+                                        <Button className="text-myTurquoise">{project.noGitHub ? "Video" : "Github"}</Button>
+                                    </a>
+                                )}
+
+                                {project.website && (
+                                    <a href = {project.websiteLink} target = "_blank" rel ="noopener noreferrer">
+                                        <Button className="text-myTurquoise">Site</Button>
+                                    </a>
+                                )}
 
                                 <Dialog>
                                 <DialogTrigger asChild>

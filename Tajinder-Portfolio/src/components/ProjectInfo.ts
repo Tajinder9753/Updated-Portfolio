@@ -3,6 +3,8 @@ import MystifyingSorceryImage from "@/assets/Projects_Images/MystifyingSorcery.p
 import ThreeMealsADayImage from "@/assets/Projects_Images/ThreeMeals.png";
 import CardsAndCavernsImage from "@/assets/Projects_Images/CardsAndCaverns.png";
 import TowerDefenceImage from "@/assets/Projects_Images/TowerDefence.png";
+import BacklogImage from "@/assets/Projects_Images/Backlog.png"
+import TankImage from "@/assets/Projects_Images/Tank.png"
 export const projects = [
     {
         title: "Uncle Joe's Fishing Extravaganza",
@@ -19,7 +21,8 @@ export const projects = [
             "Developed in Unity 2D using c#",
             "Developed as a group project, with 6 members",
             "Debt system where players must pay down their debt every week or lose the game"
-        ]
+        ],
+        website: false,
     },
     {
         title: "Mystifying Sorcery",
@@ -35,7 +38,8 @@ export const projects = [
             "Collect keys and avoid various obstacles to make it to the end of the level",
             "Developed as a group project, with 4 members",
             "Designed and implemented 3 different levels",
-        ]
+        ],
+        website: false,
     },
     {
         title: "Three Meals a Day",
@@ -52,7 +56,8 @@ export const projects = [
             "Simple but effective animations displaying each step of the cooking process",
             "Developed as a group project, with 4 members",
             "Worked primarily on the second level, where players cook garlic fried rice for lunch"
-        ]
+        ],
+        website: false,
     },
     {
         title: "Cards and Caverns",
@@ -69,7 +74,8 @@ export const projects = [
             "Final boss level to end the game",
             "Map system where players can choose which level to go to next",
             "Developed as a group project, with 6 members"
-        ]
+        ],
+        website: false,
     },
     {
         title: "Tower Defence",
@@ -87,6 +93,45 @@ export const projects = [
             "Developed as a group project, with 2 members",
             "Created the art assets for the game, including the turrets, enemies, and background",
             "Early school project but still a functional and enjoyable tower defence game"
-        ]
+        ],
+        website: false,
+    }, 
+    {
+        title: "Backlog Tracker",
+        description: "A simple website where users can create an account and track the games they own as well as details such as rating and review",
+        image: BacklogImage,
+        link: "https://github.com/Tajinder9753/Backlog-Tracker",
+        moreInfoDescription: "A simple website meant for users to be able to securely create an account and sign in, to add/update the games they have and the status of their playthroughs."
+        + "Players can also add a star rating, write up a review of the game, and store the systems they own the game on. The website was built using vite react on the frontend and express, node.js on the backend"
+        + "The information is being fetched from RAWG database, with user information being stored in MongoDB",
+        bullets: [
+            "Developed using vite, react, express, node.js, graphql, MongoDB",
+            "Secure sign in using jwt with a token being stored in the cookies",
+            "Protected routes setup so only signed in users can access the dashboard page or add/update game info",
+            "Information fetched from RAWG for all the games, with user specific info stored in MongoDB",
+            "Users can add/update games along with rating, review, status and owned platforms for the game",
+            "Searchbar to search for specific games",
+            "Note: backend is hosted on render which shuts down after inactivity, so the first entry to the site may take a few minutes to load the details"
+        ],
+        website: true,
+        websiteLink: "https://backlog-tracker-p7px.vercel.app/"
+    },
+
+    {
+        title: "Tank Commanders",
+        description: "A simple 3D tank battling multiplayer game built in Unreal Engine. Players battle enemy NPCs scattered throughout the level, collecting powerups and earning a score for each destroyed tank.",
+        image: TankImage,
+        moreInfoDescription: "A simple 3D tank battling multiplayer game built in Unreal Engine. Players engage in simple tank battles with enemy NPCs which are patrolling throughout the level."
+        + "NPCs may drop collectibles when they are defeated including health powerups and score powerups. The goal is to defeat the most amount of enemies and get the highest score.",
+        bullets: [
+            "Built in Unreal Engine",
+            "Multiplayer game",
+            "Simple but fun to play gameplay mechanics",
+            "Simple powerups to make the game more engaging",
+            "Simple enemy AI which can chase and shoot back at the player"
+        ],
+        website:false,
+        noGitHub: true,
+
     }
 ];
