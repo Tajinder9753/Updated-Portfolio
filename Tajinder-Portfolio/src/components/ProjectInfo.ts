@@ -23,6 +23,7 @@ export const projects = [
             "Debt system where players must pay down their debt every week or lose the game"
         ],
         website: false,
+        videoLink: ""
     },
     {
         title: "Mystifying Sorcery",
@@ -40,6 +41,7 @@ export const projects = [
             "Designed and implemented 3 different levels",
         ],
         website: false,
+        videoLink: ""
     },
     {
         title: "Three Meals a Day",
@@ -58,6 +60,7 @@ export const projects = [
             "Worked primarily on the second level, where players cook garlic fried rice for lunch"
         ],
         website: false,
+        videoLink: ""
     },
     {
         title: "Cards and Caverns",
@@ -76,12 +79,13 @@ export const projects = [
             "Developed as a group project, with 6 members"
         ],
         website: false,
+        videoLink: ""
     },
     {
         title: "Tower Defence",
         description: "A 2D tower defence game where players can place different turrets to defend against waves of enemies",
         image: TowerDefenceImage,
-        link: "https://github.com/EricLamoureux98/Tower-Defense",
+        link: "https://youtu.be/45lPIEgSpXI",
         moreInfoDescription: "A 2D tower defence game developed as a group project. The game is built in Unity 2D, using c#. The game features various different turrets that players can place to defend against waves of enemies."
         + "Players have a menu on the left side of the screen where they can select which turret to place and then click on a tile to place the turret. Each turret has different stats such as damage, range, and fire rate, and players must strategically place their turrets"
         + "to defend against the waves of enemies.",
@@ -95,6 +99,7 @@ export const projects = [
             "Early school project but still a functional and enjoyable tower defence game"
         ],
         website: false,
+        noGitHub: true,
     }, 
     {
         title: "Backlog Tracker",
@@ -121,6 +126,7 @@ export const projects = [
         title: "Tank Commanders",
         description: "A simple 3D tank battling multiplayer game built in Unreal Engine. Players battle enemy NPCs scattered throughout the level, collecting powerups and earning a score for each destroyed tank.",
         image: TankImage,
+        link: "https://youtu.be/u7NiQ5NoUbs",
         moreInfoDescription: "A simple 3D tank battling multiplayer game built in Unreal Engine. Players engage in simple tank battles with enemy NPCs which are patrolling throughout the level."
         + "NPCs may drop collectibles when they are defeated including health powerups and score powerups. The goal is to defeat the most amount of enemies and get the highest score.",
         bullets: [

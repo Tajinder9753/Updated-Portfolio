@@ -50,6 +50,12 @@ function Projects()
                                     </a>
                                 )}
 
+                                {project.videoLink && (
+                                    <a href = {project.videoLink} target = "_blank" rel ="noopener noreferrer">
+                                        <Button className="text-myTurquoise">Video</Button>
+                                    </a>
+                                )}
+
                                 <Dialog>
                                 <DialogTrigger asChild>
                                     <Button className="text-myTurquoise">
