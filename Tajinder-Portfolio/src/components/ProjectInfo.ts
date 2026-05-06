@@ -41,7 +41,7 @@ export const projects = [
             "Designed and implemented 3 different levels",
         ],
         website: false,
-        videoLink: ""
+        videoLink: "https://youtu.be/9wHN65hwF5I"
     },
     {
         title: "Three Meals a Day",
@@ -60,7 +60,7 @@ export const projects = [
             "Worked primarily on the second level, where players cook garlic fried rice for lunch"
         ],
         website: false,
-        videoLink: ""
+        videoLink: "https://youtu.be/Y06Nzj-PmX8"
     },
     {
         title: "Cards and Caverns",
@@ -126,7 +126,7 @@ export const projects = [
         title: "Tank Commanders",
         description: "A simple 3D tank battling multiplayer game built in Unreal Engine. Players battle enemy NPCs scattered throughout the level, collecting powerups and earning a score for each destroyed tank.",
         image: TankImage,
-        link: "https://youtu.be/u7NiQ5NoUbs",
+        link: "https://youtu.be/CPi5C5GGoVo",
         moreInfoDescription: "A simple 3D tank battling multiplayer game built in Unreal Engine. Players engage in simple tank battles with enemy NPCs which are patrolling throughout the level."
         + "NPCs may drop collectibles when they are defeated including health powerups and score powerups. The goal is to defeat the most amount of enemies and get the highest score.",
         bullets: [
