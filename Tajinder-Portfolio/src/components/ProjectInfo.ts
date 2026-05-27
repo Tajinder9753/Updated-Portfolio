@@ -5,6 +5,8 @@ import CardsAndCavernsImage from "@/assets/Projects_Images/CardsAndCaverns.png";
 import TowerDefenceImage from "@/assets/Projects_Images/TowerDefence.png";
 import BacklogImage from "@/assets/Projects_Images/Backlog.png"
 import TankImage from "@/assets/Projects_Images/Tank.png"
+import SpaceShooterImage from "@/assets/Projects_Images/SpaceShooter.png";
+
 export const projects = [
     {
         title: "Uncle Joe's Fishing Extravaganza",
@@ -23,7 +25,7 @@ export const projects = [
             "Debt system where players must pay down their debt every week or lose the game"
         ],
         website: false,
-        videoLink: ""
+        videoLink: "https://youtu.be/WUUs4FHhzDA"
     },
     {
         title: "Mystifying Sorcery",
@@ -139,5 +141,21 @@ export const projects = [
         website:false,
         noGitHub: true,
 
+    },
+
+    {
+        title: "Space Shooters (Work in progress)",
+        description: "A simple 2D space battling game I am currently working on that is still a work in progress. The game is being built in Unity and is a chance for me to try out some new ideas and mechanics.",
+        image: SpaceShooterImage,
+        link: "https://github.com/Tajinder9753/vertical-shooter",
+        moreInfoDescription: "Still a work in progress",
+        bullets: [
+            "Built in Unity 2D",
+            "Single player space shooter",
+            "Move from room to room clearing out all the enemies, defeat the final boss to complete the level",
+            "Work in progress"
+        ],
+        website: false,
+        videoLink: ""
     }
 ];
