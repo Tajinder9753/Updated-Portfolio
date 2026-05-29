@@ -142,20 +142,4 @@ export const projects = [
         noGitHub: true,
 
     },
-
-    {
-        title: "Space Shooters (Work in progress)",
-        description: "A simple 2D space battling game I am currently working on that is still a work in progress. The game is being built in Unity and is a chance for me to try out some new ideas and mechanics.",
-        image: SpaceShooterImage,
-        link: "https://github.com/Tajinder9753/vertical-shooter",
-        moreInfoDescription: "Still a work in progress",
-        bullets: [
-            "Built in Unity 2D",
-            "Single player space shooter",
-            "Move from room to room clearing out all the enemies, defeat the final boss to complete the level",
-            "Work in progress"
-        ],
-        website: false,
-        videoLink: ""
-    }
 ];
