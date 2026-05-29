@@ -5,7 +5,6 @@ import CardsAndCavernsImage from "@/assets/Projects_Images/CardsAndCaverns.png";
 import TowerDefenceImage from "@/assets/Projects_Images/TowerDefence.png";
 import BacklogImage from "@/assets/Projects_Images/Backlog.png"
 import TankImage from "@/assets/Projects_Images/Tank.png"
-import SpaceShooterImage from "@/assets/Projects_Images/SpaceShooter.png";
 
 export const projects = [
     {
