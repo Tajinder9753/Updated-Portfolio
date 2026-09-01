@@ -52,7 +52,7 @@ function Projects()
 
                                 {project.videoLink && (
                                     <a href = {project.videoLink} target = "_blank" rel ="noopener noreferrer">
-                                        <Button className="text-myTurquoise">Video</Button>
+                                        <Button className="text-myTurquoise">Video/Play Game</Button>
                                     </a>
                                 )}
 
